@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    //esModuleInterop позволяет работать с пакетами, которые используют common.js как с обычными пакетами с помощью import
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "noImplicitAny": true, //подсвечивает если не указан тип
+    // для абсолютного импорта
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./*"
+      ]
+    },
+    // если библиотека не имеет default import - лоадеры автоматически создают их
+    // вместо 'import * as' можно писать просто 'import'
+    "allowSyntheticDefaultImports": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,14 @@
+/.env
+/build
+/.next
+node_modules
+.DS_Store
+
+# editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
