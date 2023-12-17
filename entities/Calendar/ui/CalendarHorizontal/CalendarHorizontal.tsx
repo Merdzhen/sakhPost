@@ -2,9 +2,10 @@ import CalendarDate from "../CalendarDate/CalendarDate";
 import cls from './CalendarHorizontal.module.scss'
 import React, {Fragment} from "react";
 import {CustomDate} from "../../types/calendar";
-import {get25days, getDatesDiff, getLocalStringFromDate} from "../../lib/calendarFuncs";
+import {get25days, getDatesDiff, getLocalStringFromDate, getMonthString} from "../../lib/calendarFuncs";
 
 const dates: CustomDate[] = get25days();
+const currentMonth = getMonthString(new Date().getMonth())
 
 export const CalendarHorizontal = () => {
   const [activeDate, setActiveDate] = React.useState(getLocalStringFromDate(new Date()));
@@ -14,7 +15,7 @@ export const CalendarHorizontal = () => {
 
   return (
      <div className={cls.CalendarHorizontal}>
-       <div className={cls.month}>Декабрь</div>
+       <div className={cls.month}>{currentMonth}</div>
        <div className={cls.dates}>
          {dates.map((el, index) =>
             <Fragment key={index}>
