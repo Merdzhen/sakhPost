@@ -1,6 +1,7 @@
 import 'app/styles/index.scss';
 import type { AppProps } from "next/app";
 import localFont from "next/font/local";
+import Header from "../widgets/Header/Header";
 
 const golos_text = localFont({
   src: [
@@ -26,7 +27,8 @@ const golos_text = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${golos_text.variable} main`}>
-     <Component {...pageProps} />
+      <Header />
+      <Component {...pageProps} />
     </main>
   );
 }

@@ -1,7 +1,7 @@
 .main {
   --font-family-main: var(--font-golos), arial, sans-serif;
   --font-size-xs: 12px;
-  --font-line-xs: 18px;
+  --font-line-xs: 16px;
   --font-xs: var(--font-size-xs) / var(--font-line-xs) var(--font-family-main);
   --font-size-s: 14px;
   --font-line-s: 22px;
@@ -31,4 +31,8 @@
   --font-line-h1: 48px;
   --font-h1: 600 var(--font-size-h1) / var(--font-line-h1) var(--font-family-main);
   --header-height: 130px;
+  --color-primary-base: #0D4FDC;
+  --color-text-gray-light: #969CA2;
+  --color-text-error: #FF3A30;
+  --border-base: 1px solid #D3D6D9;
 }

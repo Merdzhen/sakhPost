@@ -3,7 +3,6 @@ import 'app/styles/index.scss'
 const Index = () => {
   return (
     <div>
-      Main page
     </div>
   );
 };

@@ -1,0 +1,38 @@
+.CalendarDate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  row-gap: 4px;
+  cursor: pointer;
+}
+
+.date {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font: var(--font-xl);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected {
+  background-color: var(--color-primary-base);
+  color: white;
+}
+
+.weekDay {
+  font: var(--font-xs);
+  font-weight: 500;
+  color: var(--color-text-gray-light);
+}
+
+.weekend {
+  color: var(--color-text-error);
+}
+
+.gray {
+  color: var(--color-text-gray-light);
+}

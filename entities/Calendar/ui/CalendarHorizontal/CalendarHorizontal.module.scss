@@ -1,0 +1,23 @@
+.CalendarHorizontal {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.month {
+  font: var(--font-s);
+  color: var(--color-text-gray-light)
+}
+
+.dates {
+  display: flex;
+  column-gap: 12px;
+  max-width: 1188px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.dates::-webkit-scrollbar {
+  height: 0;
+  background-color: #f9f9fd;
+}
