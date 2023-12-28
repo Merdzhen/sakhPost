@@ -1,4 +1,4 @@
-Deploy: https://sakh-post-merdzhens-projects.vercel.app
+Deploy: https://sakh-post-merdzhens-projects.vercel.app/afisha
 
 ## Work Done:
 - TS config added
